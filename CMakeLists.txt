@@ -18,13 +18,3 @@ if (APPLE)
   )
 endif()
 
-CPMAddPackage(
-  NAME FMT
-  GITHUB_REPOSITORY fmtlib/fmt
-  GIT_TAG 7.1.3
-)
-
-target_link_libraries(${PROJECT_NAME}
-  PUBLIC
-    fmt
-)
