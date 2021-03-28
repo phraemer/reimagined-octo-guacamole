@@ -26,4 +26,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build
+        run: brew install ccache
+
+      - name: Build
         run: ./build.sh
